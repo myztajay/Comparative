@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  
-  get 'pages/index'
-  get 'pages/profile'
-  get 'pages/show'
 
+  get 'compares/show'
+
+  get 'compares/index'
+
+  get 'pages/index'
+  get 'pages/show'
+  get 'pages/profile'
+
+  root to: "pages#index"
+  
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: "pages#index"
+
 end
