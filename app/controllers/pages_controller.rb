@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def index
     if user_signed_in?
-      @compares = Compare.all
+      @compares = Compare.all.where(user:current_user.id)
       render 'index'
     else
       redirect_to new_user_registration_path
