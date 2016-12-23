@@ -3,7 +3,12 @@ class PagesController < ApplicationController
   end
 
   def index
-    @compares = Compare.all
+    if user_signed_in?
+      @compares = Compare.all
+      render 'index'
+    else
+      redirect_to new_user_registration_path
+    end
   end
 
   def profile
