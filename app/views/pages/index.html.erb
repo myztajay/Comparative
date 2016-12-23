@@ -1,2 +1,16 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+Pages#index
+<h1>All Compares</h1>
+  <% @compares.each do |x|%>
+  <h1><%= x.headline%></h1>
+    <div class="compare">
+      <div class="comp1">
+        <img src='<%= x.img1_url%>'><br>
+        <button>vote</button>
+      </div>
+    <div class="comp2">
+      <img src='<%= x.img2_url%>'><br>
+      <button>vote</button>
+    </div>
+  <%end%>
+
+</div>
