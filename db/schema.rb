@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161220225627) do
+ActiveRecord::Schema.define(version: 20161223213657) do
 
   create_table "compares", force: :cascade do |t|
     t.string   "img1_url"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20161220225627) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
