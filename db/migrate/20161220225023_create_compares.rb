@@ -6,7 +6,7 @@ class CreateCompares < ActiveRecord::Migration[5.0]
       t.string :headline
       t.integer :img1_pts
       t.integer :img2_pts
-      t.integer :user_id
+      t.references :user
       t.timestamps
     end
   end
