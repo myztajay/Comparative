@@ -12,11 +12,10 @@ class PagesController < ApplicationController
   end
 
   def profile
-    @User = User.find_by(params[:id])
        @compares = Compare.all.where(user:current_user.id)
-      render 'index'
   end
 
   def show
+    @compare = Compare.find_by(params[:id])
   end
 end
