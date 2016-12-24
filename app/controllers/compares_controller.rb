@@ -20,12 +20,22 @@ class ComparesController < ApplicationController
   end
   
   def edit
+    @compare = Compare.find(params[:id])
   end
   
   def update
+    @compare = Compare.find(params[:id])
+    if @compare.update(compare_parameters)
+      redirect_to @compare
+    else
+      render 'edit'
+    end
   end
   
   def destroy
+    @compare = Compare.find(params[:id])
+    @compare.destroy
+    redirect_to compares_path
   end
   
   private

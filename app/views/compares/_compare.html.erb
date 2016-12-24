@@ -10,5 +10,7 @@
       <button>vote</button>
     </div>
   </div>
+  <%= link_to "Edit this Comparative", edit_compare_path(@compare) %>
+  <%= link_to "Delete this Comparative", compare_path(@compare), method: :delete, data: {confirm: "Are you sure?"}%>
 
  
