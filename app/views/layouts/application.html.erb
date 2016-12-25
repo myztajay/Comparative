@@ -17,7 +17,7 @@
    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
  <% end %>
 
-    <body>
+    <body class="cyan lighten-5">
         <blockquote><% if notice %>
           <p class="alert alert-success"><%= notice %></p>
         <% end %>
@@ -25,7 +25,7 @@
           <p class="alert alert-danger"><%= alert %></p>
         <% end %>
         </blockquote>
-        <div class="flow-text">
+        <div class="flow-text container center-align">
             <%= yield %>
         </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
