@@ -1,14 +1,33 @@
  <% @compares.each do |x|%>
-  <%= link_to x.headline, compare_path(x)  %>
-  <div class="compare">
-    <div class="comp1">
-      <img src='<%= x.img1_url%>'><br>
-      <button>vote</button>
+  
+  <div class="row">
+   <div class="col s12 m6 offset-m3">
+    <div class="card yellow lighten-5 z-depth-4">
+            <div class="card-content white-text">
+              <span class="card-title"><h3><%= link_to x.headline, compare_path(x), :class => " cyan-text"  %></h3></span>
+              
+    <div class="compare">
+      <div class="comp1">
+        <img  src='<%= x.img1_url%>'><br>
+        
+<a class="waves-effect waves-light btn cyan accent-4">this</a>
+      </div>
+      <div class="comp2">
+        <img src='<%= x.img2_url%>'><br>
+        
+<a class="waves-effect waves-light btn cyan accent-4">that</a>
+      </div>
+    </div> 
+    
+    
+       </div>
+           
+          </div>
     </div>
-    <div class="comp2">
-      <img src='<%= x.img2_url%>'><br>
-      <button>vote</button>
     </div>
-  </div>
   <%end%>
  
+ 
+
+              
+         
