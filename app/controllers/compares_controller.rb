@@ -1,4 +1,14 @@
 class ComparesController < ApplicationController
+  
+  
+  def index
+    if user_signed_in?
+      @compares = Compare.all
+      render 'index'
+    else
+      redirect_to new_user_session_path
+    end
+  end
   def show
     @compare = Compare.find(params[:id])
   end
@@ -40,8 +50,9 @@ class ComparesController < ApplicationController
   
   private
   def compare_parameters
-    params.require(:compare).permit(:headline, :img1_url, :img2_url, :user_id)
+    params.require(:compare).permit(:headline, :img1_url, :img2_url)
   end
+  
   
 
 end

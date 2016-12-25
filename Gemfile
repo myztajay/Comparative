@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+
+#materialize css framework
+gem 'materialize-sass'
+gem 'rails_utils'
 # Paperclip  for user uploades
 gem 'paperclip', '~> 5.0.0.beta1'
 # devise for user authentication

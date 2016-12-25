@@ -3,30 +3,32 @@
   <head>
     <title>Comparative</title>
     <%= csrf_meta_tags %>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-
-
+ <%= render 'layouts/nav' %>
  <p class="navbar-text pull-right">
  <% if user_signed_in? %>
-   Logged in as <strong><%= current_user.email %></strong>.
-   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  
  <% else %>
    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
  <% end %>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+        <blockquote><% if notice %>
+          <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+        </blockquote>
+        <div class="flow-text">
+            <%= yield %>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+          
+    </body>
 </html>

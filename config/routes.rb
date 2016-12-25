@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'pages/index'
   get 'pages/show'
   get 'pages/profile'
-  root to: "pages#index"
+  
+  root to: "compares#index"
   
   resources :compares
   
