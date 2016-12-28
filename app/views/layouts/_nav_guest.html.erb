@@ -1,0 +1,26 @@
+  <div class = "navbar-fixed">
+<!--Regualar nav-->
+<nav class="cyan">
+  <div class="nav-wrapper cyan container">
+    <a href="#!" class="brand-logo">Comparative</a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to "Home", root_path%></li>
+      <li><%= link_to "Explore", compares_path %></li>
+      <li><%= link_to "Login", new_user_session_path %></li>
+      <li class='active'><%= link_to "Sign up", new_user_registration_path %></li>
+    </ul>
+    
+    
+    <!--mobile collapse-->
+        <ul class="side-nav" id="mobile-demo">
+      <li><%= link_to "Home", root_path%></li>
+      <li><%= link_to "My Comparative", pages_profile_path %></li>
+      <!-- Dropdown Trigger -->
+      <li><%= link_to "New Comparative", new_user_registration_path,  :class =>"waves-effect waves-light btn"%></li>
+    </ul>
+  </div>
+  
+  
+</nav>
+  </div>

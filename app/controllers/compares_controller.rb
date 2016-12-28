@@ -11,6 +11,7 @@ class ComparesController < ApplicationController
   end
   def show
     @compare = Compare.find(params[:id])
+    
   end
   
   def new
@@ -32,8 +33,8 @@ class ComparesController < ApplicationController
   def edit
     @compare = Compare.find(params[:id])
   end
-  
   def update
+    
     @compare = Compare.find(params[:id])
     if @compare.update(compare_parameters)
       redirect_to @compare

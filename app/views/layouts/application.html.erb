@@ -9,53 +9,26 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
  <%= render 'layouts/nav' %>
- <p class="navbar-text pull-right">
- <% if user_signed_in? %>
-  
- <% else %>
-   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
- <% end %>
-
-    <body class="cyan lighten-5">
-        <blockquote><% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
+ 
+ 
+    <body class="cyan lighten-5 align-center">
+        
+        
+        
+        <div class="flow-text container center-align">
+          <% if notice %>
+         <p class="alert alert-success"></p>
         <% end %>
         <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>
+          <p class="alert alert-danger"><%= alert %></p>', 4000)
+          
         <% end %>
         </blockquote>
-        <div class="flow-text container center-align">
             <%= yield %>
         </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    
           
     </body>
     
-     <footer class="page-footer  cyan darken-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Want to Help?</h5>
-                <p class="grey-text text-lighten-4">You can help me get a good grade by using this app. Compare any two photo you like and get a crowd sourced analyses to help you choose your best self tp present!</p>
-                <%= link_to "Start Now", new_compare_path,  :class =>" black-text yellow waves-effect waves-light btn"%>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Comparative
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+    <%= render 'layouts/footer'%>
 </html>
