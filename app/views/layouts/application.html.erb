@@ -12,23 +12,18 @@
  
  
     <body class="cyan lighten-5 align-center">
-        
-        
-        
-        <div class="flow-text container center-align">
+        <div class="wrapper">
           <% if notice %>
-         <p class="alert alert-success"></p>
-        <% end %>
-        <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>', 4000)
-          
-        <% end %>
-        </blockquote>
-            <%= yield %>
+           <p class="alert alert-success"></p>
+          <% end %>
+          <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>', 4000)
+          <% end %>
+          <!--renders templates-->
+          <%= yield %>
         </div>
-    
-          
     </body>
     
     <%= render 'layouts/footer'%>
+    
 </html>
