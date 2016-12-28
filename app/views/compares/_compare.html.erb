@@ -1,5 +1,9 @@
- <% @compare.headline%>
-  <%= link_to @compare.headline, compare_path(@compare)  %>
+ <div class="row">
+   <div class="col s12 m6 offset-m3">
+    <div class="card yellow lighten-5 z-depth-4">
+            <div class="card-content black-text">
+              <span class="card-title"><h3><%= link_to @compare.headline, compare_path(@compare)  %></h3></span>
+  
   <div class="compare">
     <div class="comp1">
       <img src='<%= @compare.img1_url%>'><br>
@@ -10,11 +14,12 @@
       <button>vote</button>
     </div>
   </div>
-  
+   <!--Check if current user matches user_id on compare and renders edit and delete-->
     <%if @compare.user_id === current_user.id %>
        <%= link_to "Edit this Comparative", edit_compare_path(@compare) %>
        <%= link_to "Delete this Comparative", compare_path(@compare), method: :delete, data: {confirm: "Are you sure?"}%>
     <%end%>
+    </div></div></div></div>
   
 
  
