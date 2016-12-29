@@ -1,3 +1,5 @@
+
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -14,9 +16,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require materialize-sprockets
-$( document ).ready(function(){
-$('.parallax').parallax(); 
-$(".button-collapse").sideNav();
 
-})
+     
+
+

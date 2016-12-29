@@ -20,14 +20,12 @@ html, body{
 }
 
 .wrapper{
-  min-height: 58%;
- 
+  min-height: 55%;
 }
 
 img{
-  height: 280px;
-  width: 280px;
-
+  height: 200px;
+  width: 200px;
 }
 
 .compare{
@@ -35,4 +33,34 @@ img{
   justify-content: center;
 }
 
+.parallax-container {
+  min-height: 80vh;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
 
+
+.camera{
+  background-image: url('/camera.jpg');
+  
+  height: 80vh;
+  
+}
+.overlay{
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.7);
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+heroText{
+  width:30%;
+}

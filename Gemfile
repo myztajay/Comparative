@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+#Facebook authentication
+gem 'omniauth-facebook'
 #materialize css framework
 gem 'materialize-sass'
 gem 'rails_utils'

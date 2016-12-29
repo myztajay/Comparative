@@ -11,7 +11,7 @@
  <%= render 'layouts/nav' %>
  
  
-    <body class="cyan lighten-5 align-center">
+    <body >
         <div class="wrapper">
           <% if notice %>
            <p class="alert alert-success"></p>
@@ -22,6 +22,12 @@
           <!--renders templates-->
           <%= yield %>
         </div>
+        
+   <script>$(document).ready(function(){
+      $('.parallax').parallax();
+    
+    });</script> 
+        
     </body>
     
     <%= render 'layouts/footer'%>
