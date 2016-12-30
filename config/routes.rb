@@ -8,7 +8,14 @@ Rails.application.routes.draw do
   
   resources :compares
   
-  devise_for :users
+  devise_for :users,  :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  #tell Devise in which controller we will implement Omniauth callbacks:
+
+  
+
+
+  
 
 end
