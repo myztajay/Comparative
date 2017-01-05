@@ -2,12 +2,12 @@ class ComparesController < ApplicationController
   
   
   def index
-    if user_signed_in?
+    # if user_signed_in?
       @compares = Compare.all
-      render 'index'
-    else
-      redirect_to new_user_session_path
-    end
+    #   render 'index'
+    # else
+    #   redirect_to new_user_session_path
+    # end
   end
   def show
     @compare = Compare.find(params[:id])
