@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'votes/create'
+
   get 'pages/index'
   get 'pages/show'
   get 'pages/profile'
