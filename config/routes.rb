@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'votes/create' => 'votes#create' # its a POST because it will not need to load a page
+  get 'votes/create' => 'votes#create' #  will not need to load a page
 
   get 'pages/index'
   get 'pages/show'

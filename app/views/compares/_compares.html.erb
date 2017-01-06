@@ -9,7 +9,8 @@
     <div class="compare">
       <div class="comp1">
         <img  src='<%= x.img1_url%>'><br>
-<a class="waves-effect waves-light btn cyan accent-4" href="/votes/create" method="POST" >this</a>
+<a class="waves-effect waves-light btn cyan accent-4" href="/votes/create?choice=this&compare_id=<%=x.id%>"  >this</a>
+<!--link_to "this", vote_create_path(choice: "this",compare_id x.id)-->
       </div>
       <div class="comp2">
         <img src='<%= x.img2_url%>'><br>
