@@ -1,10 +1,12 @@
 class VotesController < ApplicationController
   
-  # def create (vote, user, compare)
-  #   @vote = Vote.new(vote_parameters)
-  #   @vote.
-    
-  # end
+  def create 
+    @vote = Vote.new(vote_parameters)
+    @vote.user_id = current_user.id # devuse for current user
+    @vote.compare_id = self.id # hopefully for compare that spawned this vote
+    @vote.choice = value # derived from button value in html passed to controller
+    @vote.save
+  end
   
 end
 
