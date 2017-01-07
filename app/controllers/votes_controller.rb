@@ -1,12 +1,17 @@
 class VotesController < ApplicationController
   
   def create
-
+    
     @vote = Vote.new()
     @vote.user_id = current_user.id
     @vote.compare_id = params[:compare_id]
     @vote.choice = params[:choice]
-    @vote.save
+    
+    if @vote.user_id === current_user.id && @vote.compare_id === params[:compare_id]
+     
+    else
+      @vote.save
+    end
   end
   
 end

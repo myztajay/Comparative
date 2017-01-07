@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106185609) do
+ActiveRecord::Schema.define(version: 20170107001127) do
 
   create_table "compares", force: :cascade do |t|
     t.string   "img1_url"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20170106185609) do
     t.string   "choice"
     t.integer  "compare_id"
     t.index ["compare_id"], name: "index_votes_on_compare_id"
+    t.index ["user_id", "compare_id"], name: "index_votes_on_user_id_and_compare_id"
     t.index ["user_id"], name: "index_votes_on_user_id"
   end
 
