@@ -8,6 +8,7 @@ class ComparesController < ApplicationController
     # else
     #   redirect_to new_user_session_path
     # end
+      # @voted = Vote.where user_id: current_user.id;
   end
   def show
     @compare = Compare.find(params[:id])

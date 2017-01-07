@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170107001127) do
+ActiveRecord::Schema.define(version: 20170107015614) do
 
   create_table "compares", force: :cascade do |t|
     t.string   "img1_url"
     t.string   "img2_url"
     t.string   "headline"
-    t.integer  "img1_pts"
-    t.integer  "img2_pts"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "img1_pts",   default: 0, null: false
+    t.integer  "img2_pts",   default: 0, null: false
     t.index ["user_id"], name: "index_compares_on_user_id"
   end
 
