@@ -1,25 +1,28 @@
 # COMPARATIVE
-https://github.com/myztajay/Comparative
+LIVE DEMO:
+http://comparative-myztajay.c9users.io:8080/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Approach**
+This Application was meant to be a crowd sourced photo anlysis tool.
 
-Things you may want to cover:
+**Install **
+This Repo is more or less straight forward. You will need to create your database tables in your environment
+I have ommited seed data so you will need to create your own. If you would like to use the facebook login functionality 
+you will need to create your own keys. 
 
-* Ruby version
+**Notes**
+Their are a couple of items that are currently setup in the code but not in use.
 
-* System dependencies
+- paperclip gem 
+- kickchart gem
 
-* Configuration
+This code is there as preparation to complete some of the backlog. * In addition you 
+will find that oauth is only partially implemented.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Backlog**
+- Full Facebook integration
+- Ability to include photos from facebook
+- Ability to upload (via paperclip)
+- Cool javascript animations
+- Strong parameter for vote model
+- Kick charts rather than number display for votes
