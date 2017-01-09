@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#charts
+gem "chartkick"
 #Facebook authentication
 gem 'omniauth-facebook'
 #materialize css framework

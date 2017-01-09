@@ -5,20 +5,25 @@
   
       <div class="card yellow lighten-5 z-depth-4" id="boob">
             <div class="card-content white-text">
-              <span class="card-title"><h3><%= link_to x.headline, compare_path(x), :class => " cyan-text"  %></h3></span>
+              <span class="card-title center-align "><h3><%= link_to x.headline, compare_path(x), :class => " cyan-text"  %></h3></span>
     <div class="compare">
       <div class="comp">
         <img  src='<%= x.img1_url%>'><br>
             <%= link_to "this", votes_create_path(:choice => "this", :compare_id => x.id.to_i), :class =>"waves-effect waves-light btn cyan accent-4" %>
+            <h4 class="center-align cyan-text"><%= x.img1_pts %></h4>
       </div>
-      <div class="comp">
+      <div class="comp devise ">
         <img src='<%= x.img2_url%>'><br>
             <%= link_to "that", votes_create_path(:choice => "that", :compare_id => x.id.to_i), :class =>"waves-effect waves-light btn cyan accent-4" %>
+              <h4 class="center-align cyan-text"><%= x.img2_pts %></h4>
       </div>
+      
     </div> 
     </div>
     </div>
     
+
+   
     <!--</div>-->
     <!--</div>-->
   <%end%>
