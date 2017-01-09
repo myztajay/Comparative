@@ -21,16 +21,25 @@ html, body{
 
 .wrapper{
   min-height: 55%;
+  
+}
+.comparesContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-img{
-  height: 200px;
-  width: 200px;
+.compare img{
+    min-height: 200px;
+    max-height: 201px;
+    max-width: 100%;
 }
 
 .compare{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .parallax-container {
@@ -63,4 +72,38 @@ img{
 
 heroText{
   width:30%;
+}
+
+.comparesContainer .card{
+  width: 31%;
+  margin: 10px;
+}
+.devise{
+  justify-content: center;
+}
+
+.comp{
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.comp .btn{
+  align-self: center;
+}
+.logo{
+  height: 37px;
+  margin: 14px;
+}
+
+showCompare{
+  align-self: center;
+}
+
+footer a {
+  padding:15px;
+}
+
+.fa:hover{
+  color:#ffd600;
 }
