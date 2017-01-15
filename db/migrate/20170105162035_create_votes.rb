@@ -2,7 +2,7 @@ class CreateVotes < ActiveRecord::Migration[5.0]
   def change
     create_table :votes do |t|
       t.references :user, foreign_key: true
-      t.references :comparative, foreign_key: true
+      t.references :compare, foreign_key: true
 
       t.timestamps
     end
