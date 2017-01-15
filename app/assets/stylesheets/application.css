@@ -23,6 +23,12 @@ html, body{
   min-height: 55%;
   
 }
+
+.headerMsg{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 40px;
+}
 .comparesContainer{
     width: 90%;
     margin: 0 auto;
@@ -30,6 +36,14 @@ html, body{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.flexCenter{
+  justify-content: center;
+}
+.flexSpaceBetween{
+  justify-content: space-between;
+}
+
 
 .compare img{
     min-height: 200px;
