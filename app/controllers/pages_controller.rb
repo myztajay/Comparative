@@ -11,7 +11,16 @@ class PagesController < ApplicationController
   end
 
   def profile
-       @compares = Compare.all.where(user:current_user.id)
+      
+       @user = User.find(params[:format])
+       @compares = @user.compares
+      # @compare = Compare.find(params[:format])
+      # @user = @compare.user.username
+  end
+  
+  def myprofile
+      @compares = Compare.all.where(user:current_user.id)
+      @user = current_user
   end
 
   def show

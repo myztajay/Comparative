@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   get 'pages/index'
   get 'pages/show'
-  get 'pages/profile'
+  get 'pages/profile' 
+  get 'pages/myprofile'
   
   root to: "compares#index"
   

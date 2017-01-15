@@ -12,6 +12,7 @@ class ComparesController < ApplicationController
   end
   def show
     @compare = Compare.find(params[:id])
+   
     
   end
   
