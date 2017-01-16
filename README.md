@@ -1,6 +1,6 @@
 # COMPARATIVE
 LIVE DEMO:
-http://comparative-myztajay.c9users.io:8080/
+https://powerful-river-44906.herokuapp.com/
 
 **Approach**
 This Application was meant to be a crowd sourced photo anlysis tool.
