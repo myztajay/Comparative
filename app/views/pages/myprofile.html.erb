@@ -1,6 +1,9 @@
 
 <h1 class="center-align"><%=@user.username%>'s  Comparatives</h1>
 <div class="comparesContainer flexCenter">
-<%= render '/compares/user_compares' %>
-
+    <%if @user.compares.length == 0 %>
+        <%= render '/compares/no_compares' %>
+    <%else%>
+        <%= render '/compares/user_compares' %>
+    <% end %>
 </div>
