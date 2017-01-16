@@ -5,7 +5,7 @@ https://powerful-river-44906.herokuapp.com/
 **Approach**
 This Application was meant to be a crowd sourced photo anlysis tool.
 
-**Install **
+**Install**
 This Repo is more or less straight forward. You will need to create your database tables in your environment
 I have ommited seed data so you will need to create your own. If you would like to use the facebook login functionality 
 you will need to create your own keys. 
