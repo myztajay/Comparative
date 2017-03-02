@@ -2,7 +2,8 @@
 LIVE DEMO:
 https://powerful-river-44906.herokuapp.com/
 
-![alt text](https://raw.githubusercontent.com/myztajay/myztajay.github.io/master/images/compare1.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/myztajay/myztajay.github.io/master/images/compare2.png "Logo Title Text 1")
+
 **Approach**
 This Application was meant to be a crowd sourced photo anlysis tool.
 
