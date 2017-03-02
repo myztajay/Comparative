@@ -4,7 +4,7 @@ https://powerful-river-44906.herokuapp.com/
 
 ![alt text](https://raw.githubusercontent.com/myztajay/myztajay.github.io/master/images/compare2.png "Logo Title Text 1")
 
-**Approach**
+**Summary**
 This Application was meant to be a crowd sourced photo anlysis tool.
 
 **Install**
