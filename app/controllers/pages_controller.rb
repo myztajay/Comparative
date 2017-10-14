@@ -5,8 +5,8 @@ class PagesController < ApplicationController
   def index
     if user_signed_in?
       @compares = Compare.all
-      render 'index'
     else
+      @compares = Compare.find(:all, :order => "id desc", :limit => 5)
     end
   end
 

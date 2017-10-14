@@ -77,7 +77,7 @@ html, body{
 
 .camera{
   background-image: url('/camera.jpg');
-  
+  background-size: cover;
   height: 80vh;
   
 }
@@ -97,7 +97,7 @@ heroText{
 }
 
 .comparesContainer .card{
-  width: 31%;
+  min-width: 300px;
   margin: 10px;
 }
 .devise{

@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20170107015614) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "username"
-    t.integer  "credit"
+    t.integer  "credit",                 default: 0
     t.string   "provider"
     t.string   "uid"
     t.string   "name"
@@ -49,10 +49,10 @@ ActiveRecord::Schema.define(version: 20170107015614) do
 
   create_table "votes", force: :cascade do |t|
     t.integer  "user_id"
+    t.integer  "compare_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "choice"
-    t.integer  "compare_id"
     t.index ["compare_id"], name: "index_votes_on_compare_id"
     t.index ["user_id", "compare_id"], name: "index_votes_on_user_id_and_compare_id"
     t.index ["user_id"], name: "index_votes_on_user_id"
