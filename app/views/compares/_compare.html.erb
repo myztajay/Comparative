@@ -1,6 +1,8 @@
+    
     <div class="card yellow lighten-5 z-depth-4">
             <div class="card-content white-text">
               <span class="card-title center"><h3><%= link_to @compare.headline, compare_path(@compare), :class => " cyan-text"  %></h3></span>
+              <%= image_tag @compare.user.avatar.url %>
     <div class="compare">
       <div class="comp">
         <img  src='<%= @compare.img1_url%>'><br>
