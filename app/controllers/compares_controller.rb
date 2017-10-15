@@ -22,10 +22,12 @@ class ComparesController < ApplicationController
   end
   
   def create
+
     @compare = Compare.new(compare_parameters)
+    
     @compare.user_id = current_user.id
     @compare.save
-    
+  
     if @compare.save
     redirect_to compare_path(@compare)
     else
@@ -54,7 +56,7 @@ class ComparesController < ApplicationController
   
   private
   def compare_parameters
-    params.require(:compare).permit(:headline, :img1_url, :img2_url)
+    params.require(:compare).permit(:headline, :compareimg1, :compareimg2)
   end
   
   
